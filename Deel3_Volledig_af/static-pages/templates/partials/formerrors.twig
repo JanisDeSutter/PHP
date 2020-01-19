@@ -1,0 +1,9 @@
+{% if errors|length > 0 %}
+    <div class="box" id="boxError" style="color: whitesmoke"><p>One or more errors were encountered:</p>
+        <ul class="errors">
+            {% for error in errors %}
+                <li style="color: red">{{ error }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endif %}
